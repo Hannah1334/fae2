@@ -1,0 +1,580 @@
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:#000000;
+}
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #666666;}
+#sidebanner {
+position:absolute;
+top:0%;
+left:12%;
+width:15%;
+height:100%;
+background-image: url('https://opengameart.org/sites/default/files/preview_5.gif') !important; 
+background-repeat:repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#000000;
+}
+#bigbox {
+position:absolute;
+top:0%;
+left:27%;
+width:61%;
+height:100%;
+background-color:#111111;
+}
+#picbox {
+position:absolute;
+top:5%;
+left:10%;
+width:80%;
+height:35%;
+border:1px solid #666666;
+background-color:#000000;
+text-align:bottom;
+font-family:Courgette;
+color:#ffffff;
+font-size:180%;
+}
+.bet_time {
+    position:absolute;
+    bottom:0;
+    right:5%;
+}
+#content {
+position:absolute;
+overflow:auto;
+padding:2%;
+top:45%;
+left:10%;
+width:76%;
+height:45%;
+border:1px solid #666666;
+background-color:#000000;
+color:#ffffff;
+font-family:Neucha;
+font-size:80%;
+}
+#bannertitle {
+position:absolute;
+top:5%;
+left:10%;
+width:80%;
+height:5%;
+text-align:center;
+color:#ffffff;
+font-size:160%;
+font-family:Sacramento;
+}
+#line1 {
+position:absolute;
+top:15%;
+left:10%;
+width:80%;
+height:0.1%;
+background-color:#666666;
+}
+#tabbox1 {
+position:absolute;
+top:18%;
+left:10%;
+width:80%;
+height:15%;
+}
+.tabs1 {
+display:inline-block;
+width:40%;
+height:15%;
+margin-left:5%;
+margin-right:3%;
+margin-top:5.5%;
+margin-bottom:5%;
+text-align:center;
+color:#666666;
+font-family:Neucha;
+font-size:80%;
+background-color:#111111;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+.tabs1:hover {
+background-color:#000000;
+color:#999999;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+#line2 {
+position:absolute;
+top:37%;
+left:10%;
+width:80%;
+height:0.1%;
+background-color:#666666;
+}
+#tabs2title {
+position:absolute;
+top:40%;
+left:10%;
+width:80%;
+height:5%;
+text-align:center;
+color:#ffffff;
+font-size:160%;
+font-family:Sacramento;
+}
+#tabbox2 {
+position:absolute;
+top:48%;
+left:18%;
+width:80%;
+height:45%;
+}
+.tabs2 {
+display:inline-block;
+width:25%;
+height:13%;
+background-color:#000000;
+-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+.tabs2:hover {
+-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22 {
+display: none;
+}
+i {
+color:#666666;
+font-size:80%;
+}
+h1 {
+color: #ffffff;
+font-family: Sacramento;
+text-align:center;
+font-size: 180%;
+}
+b {
+font-size: 100%;
+color:#666666;
+}
+</style>
+
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Courgette|Neucha|Sacramento" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('picbox').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="sidebanner">
+<div id="bannertitle">
+The Butterfly <img style="height:100%;" src="http://i.imgur.com/mIAhlYA.png"/>
+</div>
+<div id="line1">
+</div>
+<div id="tabbox1">
+<span class="tabs1" onClick="changeNavigation ('tab1');changeNavigation1 ('tab7')">History</span>
+<span class="tabs1" onClick="changeNavigation ('tab2');changeNavigation1 ('tab8')">Racials</span>
+<span class="tabs1" onClick="changeNavigation ('tab3');changeNavigation1 ('tab9')">Inventory</span>
+<span class="tabs1" onClick="changeNavigation ('tab4');changeNavigation1 ('tab10')">Enchantment</span>
+<span class="tabs1" onClick="changeNavigation ('tab5');changeNavigation1 ('tab11')">Stigmatism</span>
+<span class="tabs1" onClick="changeNavigation ('tab6');changeNavigation1 ('tab12')">Radiance</span>
+</div>
+<div id="line2">
+</div>
+<div id="tabs2title">
+Those She Adores
+</div>
+<div id="tabbox2">
+<span class="tabs2" onClick="changeNavigation ('tab13');changeNavigation1 ('tab18')"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/g/r/groove/thumb.jpg"/></span>
+<span class="tabs2" onClick="changeNavigation ('tab14');changeNavigation1 ('tab19')"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/e/i/eidetikos/thumb.jpg"/></span>
+<span class="tabs2" onClick="changeNavigation ('tab15');changeNavigation1 ('tab20')"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/m/u/mutt/thumb.jpg"/></span>
+<span class="tabs2" onClick="changeNavigation ('tab16');changeNavigation1 ('tab21')"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/t/e/tempest/thumb.jpg"/></span>
+<span class="tabs2" onClick="changeNavigation ('tab17');changeNavigation1 ('tab22')"><img style="width:100%;height:100%;" src="https://i.imgur.com/cMi1p8Y.png"/></span>
+</div>
+</div>
+
+<div id="bigbox">
+<div id="picbox">
+<img style="height:100%;" src="http://i.imgur.com/Nkxlylk.jpg"/>
+<p class="bet_time">THE EASTERN SIDHE</p>
+</div>
+<div id="content">
+<h1>Basic Information</h1>
+<b>Name:</b> Gossamer<br>
+<b>Title:</b> The Butterfly<br>
+<b>Physical Age:</b> Early/Mid Twenties<br>
+<b>True Age:</b> Unknown, Immortal<br>
+<b>Birthdate:</b> Unknown<br>
+<b>Gender:</b> Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Species:</b> Faerie<br>
+<b>Race:</b> Eastern Sidhe<br>
+<b>Talent:</b> Dancing, Singing<br>
+<b>Instruments:</b> Piano, Vocal<br>
+<b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a><br>
+<b>Magic Trees:</b> Enchantment, Stigmatism, Photokinesis<br>
+<b>Rank:</b> High Auror, Expert Mage, Mage<br>
+<b>Height:</b> 5'7"<br>
+<b>Weight:</b> 130 lbs.
+<h1>Detailed Information</h1>
+<b>Appearance</b><br>
+Tall, thin, athletic build. As a dancer she's spent a lot of time exercising and expanding on her flexibility. A thin layer of muscle sits under her soft white skin, and pronounces her hourglass figure surprisingly daintily. Thick black hair falls over her shoulders all the way down to her mid back, and while she prefers to wear it in curls she lets it hang down naturally most of the time. Her facial structure is elegant, with high defined cheekbones, an average slightly upturned nose, full lips, slender eyebrows, and round definitely European eyes. Her irises are a soft violet. Oddly enough, the upper tips of her ears are pointed almost elvishly, and a huge black tattoo of tribal style butterfly wings covers her whole back.
+<br><br>
+<b>Personality</b><br>
+Gossamer is a very kind and gentle woman by nature. She cares very strongly and can easily become attached. She prefers the role of caretaker, and insists on caring for everyone around her before she cares for herself. This is mainly to do with the strong mother-complex she has. When the lives of those near her are threatened she becomes an angry vengeful beast whose objective is one thing and one thing only: protect those she loves.
+</div>
+</div>
+</div>
+
+<div id="tab1">
+<h1>Lore Behind the Faerie Realms</h1>
+Magic always existed across realities, shaping and forming worlds, causing creatures to adapt during evolution and take all new heights. Among these realms, there was one species that was as common as magic itself, and that species was known as the Human Race. Humans had the ability to access magic from the beginning--they developed mana pools within their body--but they never became aware of their own potential. They had to be helped, and eventually they were, but that's a story for another time.<br><br>
+While humans began populating different worlds and started becoming the most common species in existence, their mana went unused and began building up. Then explorers and breeders became dreamers, and their nights were filled with images of objects and events they strongly desired. Their built up mass of unused mana began responding to their dreams. Influenced by the strong desires and emotions of humans, the Faerie Realms were born. It was like a paradise, a world of perfection and balance, where horror lived in harmony with content happiness.<br><br>
+Pretty soon a whole new dimension was formed in parallel to all the worlds humans occupied, and a physical place wasn't the only thing their desires formed; eventually an indigenous people were born. These were the first Fae-kind, awaking with a preset purpose and fate, already a specific age, gender, appearance. Of course, they were all beautiful regardless of their fate and their gender.<br><br>
+The first Faeries banded together to create a split government and formed the foundation and support that would still uphold their world to this day if it wasn't for the war that destroyed them all.
+<br><br>
+<h1>Before Ulreich University</h1>
+Gossamer was never one to argue with Fate or Destiny, she wasn't a stubborn rebel. In fact, the dreams that birthed her made her a gorgeous mother figure, a female to provide care to those in need. She wasn't alone either, she had a counterpart, a twin brother named Foster who was formed from the same dream. It was easy for the two of them to offer protection and happiness to their fellow Faeries, and even more so for the occasional creature that managed to find a way into their home Realm.<br><br>
+These twins were two of the first to ever be born, and it was with their help that a King and three Queens divided the land of their Realm equally. The King, however, had a sister whose fate was to some day take his place. This sister, whose name was Morgan, became close friends with both twins, and eventually a forbidden love blossomed between her and the brother. Gossamer spent many nights pleading with her brother, not wanting him to endanger his future and the future of their dearest friend, but her warnings fell on deaf lovestruck ears.<br><br>
+While all this was happening, outside of the Faerie Realm a sinister plot thickens. Demonic and Angelic beings, embodiments of light and darkness, catch wind of a new infant world formed entirely out of magic and desire. Both opposing groups become very greedy and feel the need to capture this new world, wanting to make it theirs. Both competed, until a war between the two kinds of beings began in the very world they wanted to claim so badly. The Faeries tried to stay as neutral as possible, but many of them were captured and forced to fight for one side or the other, effectively drawing them into the war.<br><br>
+I wish I could say that the Faeries won their home and both Angelics and Demonics were forced out of their borders, but that would be false information. It was the Demonics who won this war, and it was the Demonics who captured the Fae-kind.<br><br>
+During the first part of the Great War when it was three parties fighting each other, Morgan and Foster continued to try and meet in secret. Unfortunately, Demonics came across their secret place and captured Morgan while Foster managed to fight his way out and break free. Shortly after this capture, the Demonics won the war and slaughtered the Angelics until none of them were left behind. A heavy oppression on the Faeries began, but the powerful twins stuck together and managed to avoid capture. Gossamer became the head of a resistance group, made of powerful survivors and renegades. Her initial goal was to free Morgan, but as time went on it was clear that she needed to widen her narrow view. So many of her people needed her help. Upon this revelation her tactics became far more violent and vicious, and she was taking out many of the Demonics.<br><br>
+There was a prize put on the Faerie's head, but no matter who went for her, they all came back in several separate pieces. It became clear that if they were to subdue this revolution, they were going to have to have someone from the inside bring her to them. A heavy weakness was found. Foster had spent his days continuously failing to free his lover from captivity, and the repeat of his failure started to drive him crazy, he was desperate. The Demonics approached him, telling him that he could trade his sister for his lover, and he agreed. He lured Gossamer into a trap where she was captured, and while she was forced to become a slave, a lapdog for her new masters, Morgan's dead body was delivered to Foster.<br><br>
+Driven by anger of betrayal, Gossamer broke free long enough to kill Foster, wanting to "put him out of his misery," and then fled to the human realms. She was found delirious and barely conscious, and when she came to all of her memories were gone.
+<br><br>
+<h1>After Arrival At Ulreich</h1>
+Several years passed while the amnesia-ridden Fae lived in Russia, assuming she was one of many typical humans with a few birth defects. Despite the fact that she could practice very minor forms of magic, she was still surprised to receive a letter which invited her to be one of the very first students at Ulreich University. Packing her bags, she set off on the adventure of a lifetime and welcomed her new future with open arms. Upon her arrival, she was invited to a party on campus where she met several fellow students as well as some important figureheads, like the Conjuration Teacher named Apollo O'Connor. <br><br>
+As time passed, "Vika Smirnov" made new friends and slowly grew in great power, the more mana she unlocked and utilized the more of her past she remembered. Rising through the ranks allowed her to not only go on grand adventures but even unlock the mysteries of the forgotten horrors that plague her in the forms of nightmares. Eventually her chosen path and her heart led her to develop a strong bond with the O'Connor, strengthened even moreso by hardships and trials. When the elusive Headmaster took the teacher's arm, sparks of distrust slightly ignited in her, only to be strengthened into a wild fire as her love interest and her dearest friends were forced on a mission that almost ended up taking their lives. The human man that held her heart nearly died, tortured before their very eyes, and if it weren't for an agent from the Kre'Nathian government they would all be lost.<br><br>
+Memories completely unlocked, and a hesitant man agreeing to be her partner in life and in love--thanks to her self sacrifice that almost cost her own life in order to save his--Vika turned Gossamer once more set out on a mission of vengeance against the oppressors of her people; the monsters that turned her brother against her and killed her princess. Together, the O'Connor and the Faerie ventured into the Faerie Realms and witnessed as well as defeated unimaginable horrors, emerging victorious with the head of the slave driver's in the Enchantress' fist. The need to carry out this violent endeavor stemmed from the discovery of a tiny baby, half Faerie and half Xink, with no living relatives or parents of any kind to speak of, left in Gossamer's care. The realization that there were still new generations of Fae being born gave her hope that her home could belong to its rightful owners once more, and right she was.<br><br>
+Now a member of the royal family has sought out our Butterfly, offering her a powerful magical gift and requesting she return to her homeworld to help rebuild. She hopes that together, with the help of their hero, they may truly rise from the ashes and prosper once more.
+</div>
+<div id="tab7">
+<img style="height:100%;" src="https://i.imgur.com/bzXOftZ.jpg"/><img style="height:100%;" src="https://i.imgur.com/Aciwhln.jpg"/>
+<p class="bet_time">THE STORY OF THE FAE</p>
+</div>
+
+<div id="tab2">
+<h1>Racial Abilities</h1>
+<b>Immortality</b><br>
+The First Generation Faeries were "born" into one single physical age and remain that age eternally. They can die from anything except natural causes.
+<br><br>
+<b>Mana Sensitivity</b><br>
+The Fae-kind are very sensitive to auras and mana, allowing them to feel or see when another being is drawing from their mana pool or activating their mana, even if something is blocking their vision, a faint outline of an aura can be seen--or sensed--so long as the fellow magic user is within a twenty foot radius of the Fae. She cannot tell how much mana is being used or the user has left over, she is merely sensitive to when it is currently in use within the radius.
+<br><br>
+<b>Enhanced Speed</b><br>
+The body of the Fae-kind is light, petite, and athletic. They can move double the speed of the average human and the strongest Fae's speeds can rival that of a hummingbird's.
+<br><br>
+<b>Enhanced Flexibility</b><br>
+Their bodies are as flexible as they are light, allowing them to contort their shapes into absurd formations. Something someone would expect to see in a circus act.
+<br><br>
+<b>Burning Calories</b><br>
+The Fae-kind eat thousands upon thousands of calories on purpose and burn them off very quickly. Physical sugary foods is said to help their mental and magic stability, often allowing them slightly faster mana regeneration than what is average if consumed when their mana-pool is either completely drained or close to it.
+<br><br>
+<b>Hidden Wings</b><br>
+Tribal-like wing markings cover the backs of the Fae-kind. These tribal markings cause various different kinds of winged silhouettes to form as an aura behind each individual Faerie when they dip into their mana pool.
+<br><br>
+<b>Advanced Perception</b><br>
+Rather than rise in the ranks of typical physical speed, her mind processes actions and comes up with a reaction twice as fast as the average human's.
+<br><br>
+<b>Enhanced Strength</b><br>
+Years of physical training have paid off. Faeries always had the capacity to be physically strong despite their average dainty figures. This Faerie is now twice as strong as the average human, thanks to the years of hard work and the significant rise in power.
+<br><br>
+<h1>Universal Spells; Mana Manipulation</h1>
+<b>Aura</b><br>
+Every living thing has mana, and the colors of their mana and their aura vary from person to person. Gossamer's mana is always a blue color, but varies in its shades depending on her mood.<br>
+<i>"Blue is a cool and calming color that shows creativity and intelligence. The color blue is a popular color among large companies, hospitals and airlines. It is a color that symbolizes loyalty, strength, wisdom and trust. Blue color meaning is also known to have a calming effect on the psyche. Blue is the color of the sky and the sea and is often used to represent these images."</i>
+<br><br>
+So far, Gossamer has attended every single Major Class at Ulreich University and by result can cast every Universal Spell that was taught (save for "Mana Graft"). Each of these spells and their descriptions can be found by <a target="_blank" href="https://tyler-fowlow96.wixsite.com/spellbook">clicking this link.</a>
+</div>
+<div id="tab8">
+<img style="height:100%;" src="http://i.imgur.com/io0N26f.png"/>
+<p class="bet_time">RACIALS OF A FIRST GENERATION SIDHE</p>
+</div>
+
+<div id="tab3">
+<h1>Items</h1>
+<b>Butterfly Bracelet</b><br>
+Embedded with jewels and a graceful make, this precious bracelet was given to her by someone she holds very close to her heart.
+<br><br>
+<b>Drangoneye Necklace</b><br>
+A stone entirely native to Kre'Nath, it tends to have a blend of reds, golds, and oranges, and a large black crack through the center. This beautiful roughly carved stone hangs as a charm off of a silver chain that hangs around her neck.
+<br><br>
+<b>Obsidian Ring</b><br>
+A very simple silver band with a square-cut obsidian jewel sits on the ring finger of her right hand.
+<br><br>
+<b>Wing Earrings</b><br>
+Another wonderful gift from the same person, a pair of simple diamond earrings. The true design comes from behind, where feathered wings hang from behind the bottom of the ear for about an inch.
+<br><br>
+<b>Leather Sheathe</b><br>
+A black leather sheathe designed to hold the machete, with an adjustable leather strap designed to go over the head and sit most of its weight on the shoulder, so the sheathe would rest against the wearer's back.
+<br><br>
+<b>Leather Holsters</b><br>
+Two black leather holsters with adjustable straps designed to stay firmly on the wearer's upper thigh.
+<br><br>
+<h1>Armor</h1>
+<b>Night Seeker Armor</b><br>
+A set of strange foreign armor found deep in Davof's castle, pushed to the back of a room the Xink overlords used for storage. Complete with a full upper-body metal corset, off the shoulder metal sleeves (with special joints around the elbows that allow bending and free movement) that connect evenly with a pair of plated gloves. Even the boots are solid silver, reaching up past her knees (also with special joints around the knees to allow movement). Undergarments are made of a very strong leather and stiff cloth, colored a deep navy blue. The whole ensemble is topped off with the option of a long hooded cloak that hangs over her shoulders and reaches all the way to her ankles. The metal platings of this armor set have a natural steel grade durability. While not very impressive in appearance, and still very thin and light, the armor itself has been imbued with very powerful enchantments.
+<br>
+<i>The Blessing of Resistance</i><br>
+A magical ability attached to the armor itself; when mana is fed to the equipment, the attire's durability is raised to diamond and becomes coated in a filmy layer of mana that gives it an equal ranked/durability defense against pure energy and spiritual energy/constructs. In addition, this "solidified" aura created by this ability quadruples (x4, cannot stack with any other buffs to be higher than x8) the wearer's base speed, reaction time, and strength for six rotations. While the buff and the barrier can be used one without the other, once the buff is utilized it will require two full rotations to cool down before it can be used again (if used immediately after the two rotations the next wait time is raised to four rotations), and eats up a considerable chunk of the caster's mana each time (the more it's used the higher mana cost, rotation limit only applies to the buff, barrier can be upheld as long as the wearer has mana available to feed into it).
+<br>
+<i>The Blessing of Comfort</i><br>
+The part of the armor set that is the protective cloak also has its own powerful enchantment, that when activated will keep the wearer's body at whatever temperature they desire, no matter the terrain or the weather (natural terrain/weather, it will have a x3 resistance to magical induced temperatures, terrains, etc). If the cloak is removed from the wearer completely, even if it has not been destroyed, the enchantment will deactivate and no longer apply.
+<br>
+<i>The Blessing of a Sound Mind</i><br>
+Yet another ability lies dormant in the armor's fabric hood. Only cloth on its own, it doesn't have much durability and thus leaves a dangerous weakness over her head. When activated, however, it protects the wearer in a different way; against attacks on the mind from those of equal rank to the caster or lower. This hood allows a strong barrier to encase the wearer's consciousness and allows a strong resistance to deceptions, illusions, and other spells centered around confusing and disturbing the mind. While it can only fend off one equal ranked attack at a time before needing to be recast (two of lower rank), the only limit for numbers of use is the size of the caster's mana pool and the rank of the mental spell directed toward her. Once used, the caster must wait three rotations before it can be used again.
+<br>
+(Doesn't disable effects of chained spells that require more than one attack)
+<br><br>
+<h1>Weapons</h1>
+<b>Machete</b><br>
+A two foot blade of sharpened steel with a regular wooden handle, wrapped in leather to make an easier grip.
+<br><br>
+<b>Hunting Knives</b><br>
+Two hunting knives with four inch serrated blades, connected to wooden handles wrapped in leather to make an easier grip.
+<br><br>
+<h1>High Auror Medium</h1>
+<b>Almaba, the Butterfly's Staff</b><br>
+This intricately designed and mostly silver-plated mage staff looks deceptively like just a fancy six-foot long walking stick designed for some upper class Faerie. Four of those six feet are made up by a long and thin metallic bar, the bottom of which is sharpened and curved into a very definite spear with a little weighted ball to help keep the piece well balanced. The top end of the staff has a large circular ring covered in spikes that almost make it look like it's supposed to represent the sun. Each spike is about six inches long and four inches wide, and there are a total of eight of them positioned around the circular object's circumference. Inside this strange spiked hoop rests a translucent globe no bigger than a baseball that looks deceptively like glass. The Medium as a whole has a toughness of Diamond despite being made out of varying metallic and nonmetallic materials, and within its weilder's grasp seems weightless. Each aforementioned piece of the staff is its own separate entity, a smaller Medium designed to cater to each of the High Auror's trees exclusively, and can be taken apart and used on their own. However, when the whole staff is in one piece and mana is channeled through it in order to cast spells, it effectively cuts the weilder's normal cast times in half. In addition, from the translucent orb the wielder can shoot arrows of light (not made from her Photokinetics, so the light is just an energy construct it has no abilities that Photokinetics specifically allows) that carry her enchantments on them. The projectiles would be purely energy based and diamond grade (or max rank equivalent), able to reach the natural speed of any other arrow shot from a typical bow or crossbow.
+<br>
+<i>The Auroran Globe</i><br>
+A small ball that is glass-like in appearance but is actuall made from diamond. When channeling her mana through it she can shoot small dart-shaped energy based projectiles with Diamond toughness out of it that can also carry her enchantments. These projectiles can be shot at--and reach speeds of--up to 50mph. The Auroran Globe can be controlled by Gossamer telepathically, allowing it to hover in air for up to six feet away from her body if she so chooses. While the sphere itself is no bigger than a baseball, enchantments charged within it gain a x1.5 effectiveness boost.
+<br>
+<i>The Sun-Star Chakram</i><br>
+The total radius of natural reach this whole chakram has on its own is two feet. Six inch long spikes portrude from a thick metallic ring, which has strange loops in its center that are designed to be finger holes. Like the Auroran Globe, the Sun-Star can be controlled telepathically within a six foot radius of its caster, but should she choose to keep the weapon just above her head while a Stigmatism aura is active, that aura will get a x1.5 boost in effectiveness. Should she have her Flickering Butterfly aura specifically active while using this Medium as a makeshift halo, she gains a x1.5 boost in airborn maneuverability.
+<br>
+<i>Moon's Lantern, the Butterfly's Spear</i><br>
+On its own, the spear is just a little over four feet in length, and about two inches in width/thickness. The entire surface area of this weapon is silver plated with swirling designs etched into its body. Six inches out of these four feet are morphed and sharpened to make a spear's point. Any of Gossamer's current Photokinetics spells can be formed around the spear or at its tip, and should she choose to use the weapon as a catalyst for her magic, her spells gain a x1.3 boost for effectiveness. The spear can also be coated in a layer of light mana that allows it to do minor burn damage.
+</div>
+<div id="tab9">
+<img style="height:100%;" src="http://i.imgur.com/oEEoBin.png"/><img style="height:100%;" src="https://i.imgur.com/EwDUVMi.jpg"/>
+<p class="bet_time">ITEMS, WEAPONS, & MEDIUMS</p>
+</div>
+
+<div id="tab4">
+<h1>Enchantment</h1>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a "Permanent" effect or boon. However, these enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. Only non-biological/sentient objects may be enchanted.​"</i><br>
+<br><br>
+<b>Fair-Fire</b><br>
+A simple spell that causes the enchanted item to be covered in flames without damaging the item itself. Flames will dissipate after Enchanter is 30 feet away from object. Costs minimal mana to continue the flames, so although this can be done for quite a while, it's not infinite (technically). Can be put out by any spell that could normally deal with flames, as long as they're Gossamer's rank or below, or if hit consecutively by an Expert Mage.
+<br><br>
+<b>Fair-Ice</b><br>
+A simple enchantment that very quickly sucks any thermal energy it can reach into itself from anything within a twenty foot radius. As long as Gossamer is inside this radius she can pick and choose what thermal energies she wants the enchantment to suck in, and which ones she wants it to ignore. 
+Not only does being within radius of this spell cause one's limbs to go frigid and make movement much more difficult, but humans caught within the radius for two or more posts will die. Anything with a weakness to cold or constant loss of thermal energy will die near instantly.
+<br><br>
+<b>Titania's Arrow</b><br>
+An enchantment that doubles an object's natural speed as long as it's being thrown as a projectile. Cannot reach speeds over 100MPH.
+<br><br>
+<b>Bond</b><br>
+If two things of physical mass touch an object with this spell attached to it at the same time, the two solid masses will be stuck together permanently until broken by a mage of equal rank to Gossamer (must be done via some sort of spell). Faith mages of at least High Mage and any Enchanter of the same rank can break this spell.  
+<br><br>
+<b>Be Glass</b><br>
+This enchantment can only be used on solid objects and magic based constructs that are already denser and tougher than glass. For as long as the enchantment is active on the object, the object's physical make up will change to become a glass version of itself. Physical nonmagic objects will change instantly as long as they are Diamond or below, but solid magic constructs--or magically inclined objects--will take more than one post and must be at least Tungsten or below (Two posts will only convert about a wall sized construct to glass, so anything larger than that will only have that size turned over). This spell can be removed by Faith and Enchantment mages of high enough rank (any aforementioned mage type of at least High Mage) Can’t be done to High Mage Mediums and Epic Mediums. Physical contact with the Enchantment itself is required for this spell to be successful (so against destructive and harmful-to-the-touch mana constructs it will be ineffective).
+<br><br>
+<b>Be Stone</b><br>
+This enchantment can only be used on solid objects and magic based constructs that are already less dense and weaker than stone. For as long as the enchantment is active on the object, the object's physical make up will change to become a stone version of itself. Physical nonmagic objects will change instantly, but solid magic constructs--or magically inclined objects--will take more than one post and must be at least equivalent in rank to Auror or below (Two posts will only convert about a wall sized construct to stone, so anything larger than that will only have that size turned over). This spell can be removed by Faith and Enchantment mages of high enough rank (any aforementioned mage type of at least High Mage) Can’t be done to High Mage Mediums and Epic Mediums. Physical contact with the Enchantment itself is required for this spell to be successful (so against destructive and harmful-to-the-touch mana constructs it will be ineffective).
+<br><br>
+<b>Boom Clap</b><br>
+When two objects collide, as long as one of them holds this Enchantment, they'll send three blasts of force and sound, strong enough to kill anyone caught in point blank range unless they have substantial defenses set up and can protect against it. Those defenses would need to be strong, however, because at point blank range (within five feet of the spell) it can shatter through Diamond (and anything inside of a Diamond casing should the target be wearing armor for example). The sound the spell exerts is so intense that at point blank range it will damage the ears to the extent of causing an opponent to lose their balance (within 5-10 feet of the initial casting point of the spell, and that range is doubled for beings with sensitive hearing) and incapacitate them for at least one post. Initial release of the force is a circular spinning point that starts out confined into one space, that extends out into up to three different specific points of force (which also expand outward as they travel until it's less like a nail and more like a wall of force, decreasing in destructive power the further the spell travels). The force the spell exerts, however, is a one way road and does not send backlash to the caster, and since the force is pushing the sound with it, being behind the spell rather than in front of it will allow the noise it makes to be tolerable. It will cause enough injury to mages within a ten foot radius to actually damage their ears to the point of going deaf.
+<br><br>
+<b>Transmogrify</b><br>
+This permanent enchantment only works on suits of heavy armor. It lightens the overall weight of the armor to feel like light armor. Will work on any piece of amour, decreasing its weight without removing durability. Enchantment only permanently works on armor that is Titanium toughness or lower.
+<br><br>
+<b>Fire's Wrath</b><br>
+When excess heat has been applied to the object (for example someone holds it long enough for their natural body heat to effect it) the object will be covered in flames. These flames can be put out by normal means but are very easy to re-light. They behave as normal flames on everything except the item they occupy. This is a permanent enchantment and cannot be stopped until the enchanted object is broken.
+<br><br>
+<b>Middle Layer</b><br>
+This enchantment only works if another enchantment has been laid on an object prior, and only works for solid objects/constructs. This spell allows her to lay a second enchantment over the first, but no more than that. It doesn't combine the skills of the enchantments, simply allows more than one to be active on an object at a time. (Only two enchantments--aside from this one itself--can be active at once.)
+<br><br>
+<b>Steady Shield</b><br>
+An enchantment that temporarily expands whatever mass it has been cast on until that mass has expanded to reach up to ten feet in height and possibly ten feet in width. It also coats the mass in a layer of hard mana, allowing it to be sturdy against both physical and energy based attacks, especially those lower ranking than the caster, and has a physical toughness of Diamond. If the spell is deactivated or the wall is shattered, the mass will return to its original size and shape. It takes initial physical touch to cast this enchantment on an object, but as long as the object remains within a forty foot radius of her body it can be activated without touch. The object that this is cast on must be smaller than eight feet at every angle, nonsentient, and weigh less than one hundred fifty pounds.
+<br><br>
+<b>New Edge</b><br>
+A permanent Enchantment that covers an object in a thin layer of protective mana to increase its toughness and sharpness. The outer layer of mana is Diamond grade, and can only be activated if the caster feeds their mana to the enchanted object. Item cannot measure more than ten feet at any angle and cannot already be magically inclined.
+<br><br>
+<b>Aura of Discretion (Permanent Enchantment)</b><br>
+Upon activation, the object or objects this Enchantment has been cast on will be coated in a magical aura that--while not wet--retains a liquid-like shape and form. Any lesser sensory abilities (depending on the user's rank, lesser being two ranks below, counting the rank they are as the first, so for example for a max rank "lesser" would entail High Mage and below, etc) regardless of what kind--hearing, seeing, smelling, etc--used in its vicinity will "slip" across the liquid-like aura as though it were sliding the spell off of its surface and redirecting attention elsewhere, effectively creating the illusion of its own nonexistence. Even if someone manages to see through, this does not mean the spell is broken entirely; to deactivate the spell the wearer must do so or the source of the Enchantment must be destroyed.
+In order to activate this spell the user must feed the item it is attached to thoughts and intentions about being hidden. It lasts for a maximum of six rotations and requires three to cool down before it can be used again. 
+<br><br>
+<b>Mother's Protection (Permanent Enchantment)</b><br>
+When the user pushes mana through the item imbued with this Enchantment, it activates and converts said mana, expanding it over the user's body to create a thin layer of protective material that acts as a barrier against attacks steel grade (or Adept Mage equivalent). While the barrier lasts until it is intentionally deactivated or destroyed, it offers a temporary buff that doubles the physical and mental speed (reaction time + processing speed) of the user. This mechanic only lasts four rotations and requires two to cool down before it can be used again.
+<br><br>
+<b>A Faerie's Gift: Do Over (Permanent Enchantment)</b><br>
+Very basic in nature, this Enchantment requires the object it is imbued within to be broken for it to work at all. While it can't be placed on most magically enhanced objects (unless a spell like Middle Layer is used, and the original creator of this spell can use it on/with her High Auror Medium) it is designed to repair the object in question and return it to its complete state as soon as a breakage has occurred. In order to stop this from happening, one must completely wipe any trace of the Enchantment itself--or the item it is attached to--from existence. Once the object in question has been repaired, this spell leaves it altogether and completely deactivates, only being useful for one occasion. (Note: If other Enchantments have been placed over the item, and breaking it at all deactivates them, this spell will NOT fix them by repairing, they will be gone.)
+</div>
+<div id="tab10">
+<img style="height:100%;" src="https://i.imgur.com/NkqtFTs.png"/>
+<p class="bet_time">PRIMARY TREE; HIGH AUROR</p>
+</div>
+
+<div id="tab5">
+<h1>Stigmatism</h1>
+<i>"Stigmatism is the art of creating Auras around your body based on spirits that you form a close connection to. Stigmatism auras are generally related to an animal, and take on its properties (for example, a Hawk aura would grant increased vision, and faster movement), but they can take on the form of legendary human spirits as well. Each spirit that you use to create an aura from must be attached to the physical world via items that the mage holds on their person."</i>
+<br><br>
+<b>Flickering Butterfly</b><br>
+Through the gift of the beautiful butterfly bracelet from Apollo O'Connor, she decided that her second tree was going to be Stigmatism. This aura simply expands upon her already existent butterfly-wing shaped aura. The intent given to these wings are mostly air-based.<br>
+<i>Flight:</i> The stigmatism aura imbued with her already existent wings allows her to hover comfortably up to 30 feet off the ground. She can reach top speeds of 30 MPH while flying.<br>
+<i>Guardian:</i> This is the defensive aspect of this aura, if she curls her "wings" around herself protectively, they will act as magic wards. Attacks from equal ranking mages will be blocked, while physical attacks and minor projectiles from lower ranking mages (of up to Mage rank with an extra cost of mana) will be reflected back toward them. Since her wings are rather large, she can wrap them tightly around her body to make two layers of this defense. Consecutive attacks and strong charged attacks of at least Adept Mage will be able to break through.<br>
+<i>Whirlpath:</i> This is the offensive aspect of this particular aura. If she concentrated enough mana into the construct and flaps the wings hard, a strong whirlwind will fly forth with enough force to lift decently large items and throw them like shrapnel. These whirlwinds travel a maximum of ten feet away from her body and can immobilize those equal to three times the weight of the average human and throw them like shrapnel as well. The wind is also strong enough to warp physical constructs (both magic and nonmagic) of Cobalt toughness and below, the lower the toughness the more damage the wind does. Can be detered by other wind based spells.
+<br><br>
+<b>Dragon's Shard</b><br>
+This stigmatism aura changes her naturally butterfly shaped wings into those shaped much like a dragon's. When this aura is active, she gains a small resistance to fire based attacks but a weakness to electricity, and offers her own fire based spells a x1.5 boost. The item that triggers this aura is a small orange and red charm on a silver necklace chain. 
+<br><br>
+<b>Wraith's Kiss</b><br>
+When this aura is active, rather than take the shape of wings her aura will have a sickly white appearance to it and would float around her like a thin cloud of smoke. While this is active, if enough of the mist is inhaled then the target will lose consciousness for six hours. Target must breathe in aura for three whole turns before it takes affect. The aura, of course, can be detered by air based spells. The item that triggers this aura is a small obsidian gem set in a simple silver banded ring.
+<br><br>
+<b>Feathered Wings</b><br>
+This is just the name of the new aura. When activating Feathered Wings, her aura shifts into large birdlike wings. The aura is connected to another gift from Apollo O'Connor, this time being winged earrings.<br>
+<i>Angel's Wings:</i> If Gossamer "wraps" her aura-made wings around fellow comrades, she can give a x1.5 boost to their natural speed and their defensive spells. After the initial "contact" with her winged aura, this boost remains active on her allies no matter how far from her they travel so long as her aura remains active.
+</div>
+<div id="tab11">
+<img style="height:100%;" src="https://i.imgur.com/0SVonIX.png"/>
+<p class="bet_time">SECONDARY TREE; EXPERT MAGE</p>
+</div>
+
+<div id="tab6">
+<h1>Radiance: "Photokinetics"</h1>
+<i>"Users of Radiance must choose between the ultimate duality; to manipulate the light itself, or manifest their power through the darkness of shadows. Light Radiance, or Photokinesis is primarily concerned with creating bright and powerful energy based attacks, although it is possible to create more physical aspects to its magic at a higher rank. The Radiance trees can be influenced in a number of ways to provide a boon or nerf to its magic, such as bright days increasing the power of Photokinetics, and Dark nights increasing the power of Umbrakinetics."</i>
+<br><br>
+<b>Glowball</b><br>
+A small orb of intense pale blue light is created when this spell is cast. The small construct passively floats a foot above her head and is bright enough to easily light up a fifteen foot radius around itself. Should she focus on the ball, however, she can manipulate it telepathically to move anywhere within a five foot radius of her own body. When used in this way, the Glowball can even become a small projectile, and should it connect with an opposing force and "pop" it'll burst into a bright flash of light, strong enough to temporarily blind those within five feet and daze those within fifteen.
+<br><br>
+<b>Change of Perception</b><br>
+Color is perceived based on how light reflects off of a surface. This spell allows her to coat her body in a thin layer of light so she can "change color." She can shift multiple colors at once, and while the change wouldn't seem natural up close, in bright daylight and a fair distance away it could be perceived as a natural change of color. Any mage with sensory spells (designed for seeing through things like this) ranked Mage or above would be able to see through the color change.
+<br><br>
+<b>Glowing Javelin</b><br>
+A four foot staff with a very sharp tip made out of solidified light. It behaves like a regular simple weapon, merely needing to be formed at the cost of mana and has a toughness grade of iron. Gossamer can have up to two Javelins formed at once, and can telepathically control them within a ten foot radius of her body right after they are formed, but once they are used as projectiles she no longer has control over them.
+<br><br>
+<b>Mental Map</b><br>
+A harmless burst of light is gathered around the caster and then released over a fifteen foot radius. The light bounces off of whatever surfaces are in its path and once it reaches the peek of the distance it can travel, it returns to the caster and gives them a mental map of the layout within that radius. The mental map paints outlines, not specific details. Things like the materials of objects would not be detectable.
+<br><br>
+<b>Liquid Light</b><br>
+By creating a mana spark and continuing to weave mana around the spark like a web, eventually the orb will expand into a small sphere of "liquid light" that is incredibly adhesive. The outer layers of this sphere require iron toughness and above to break through them, but the internal liquid light burns so intensely that it can melt through other substances given enough time. Should the internal adhesive liquid material stay active for two posts, it has the ability to melt through iron. Can only last for a total of four posts before spell naturally dissipates and needs to be recast.
+</div>
+<div id="tab12">
+<img style="height:100%;" src="https://i.imgur.com/zAqMgi9.png"/>
+<p class="bet_time">TERTIARY TREE; MAGE</p>
+</div>
+
+<div id="tab13">
+<h1>Basic Information</h1>
+<img style="height:40%;" align="right" src="https://i.imgur.com/hh6E8zX.jpg"/>
+<b>Name:</b> Apollo O'Connor<br>
+<b>Gender:</b> Male<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Italian<br>
+<b>Occupation:</b> Teacher at Ulreich University<br>
+<b>Rank:</b> High Auror<br>
+<b>Primary Tree:</b> Conjuration<br>
+<b>Account:</b> <a href="http://groove.chatango.com">Groove</a><br>
+<b>Relation:</b> Gossamer's Boyfriend
+<br><br>
+<h1>How Did They Meet?</h1>
+When the mysterious Headmaster of Ulreich University sent out invitations to the very first wave of students, Gossamer was among them. She had no memory of her life as a Faerie and assumed herself to be human, having been "raised in Russia" her name at the time was Vika Smirnov. One of her student peers had set up a welcome party to celebrate the grand opening of the University, and that's where the Enchantment student met the Conjuration Teacher. Things didn't start out romantically for them, but as time passed they eventually developed a spectrum of complicated feelings for each other. Since then, Gossamer has regained her memory and no longer goes by her old human name, but he still insists on referring to her as "Vika." She certainly doesn't complain, there's just something sweet about her lover being the only person in the world to still call her by that name.
+</div>
+<div id="tab18">
+<img style="height:100%;" src="https://i.imgur.com/vmL2arr.jpg"/>
+<p class="bet_time">THE TEACHER, THE LOVER</p>
+</div>
+
+<div id="tab14">
+<h1>Basic Information</h1>
+<b>Name:</b> Brooke<br>
+<b>Gender:</b> Male<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Caucasian<br>
+<b>Occupation:</b> Student at Ulreich University<br>
+<b>Rank:</b> Auror<br>
+<b>Primary Tree:</b> Aeromancer<br>
+<b>Account:</b> <a href="http://eidetikos.chatango.com">Eidetikos</a><br>
+<b>Relation:</b> Close Friend
+<br><br>
+<h1>How Did They Meet?</h1>
+By the time the Faerie and the purple-haired human met, both had already been students for quite awhile. They met because of Apollo and their true first outing as friends was a dangerous one that required them to fight side by side. This brought about a strange level of instant camaraderie that can really only be obtained by two individuals that are forced to risk their lives for each other even though they barely know the other's name. Ever since that outing, Gossamer has found herself caring deeply for the young man with the same intensity and ferocity as a protective older sister might feel for her younger brother.
+</div>
+<div id="tab19">
+<img style="height:100%;" src="https://i.imgur.com/CT7BHcm.png"/>
+<p class="bet_time">THE AEROMANCER</p>
+</div>
+
+<div id="tab15">
+<h1>Basic Information</h1>
+<b>Name:</b> June<br>
+<b>Gender:</b> Female<br>
+<b>Species:</b> Faerie-Xink Halfblood<br>
+<b>Race:</b> Half Southern Sidhe<br>
+<b>Occupation:</b> Student<br>
+<b>Rank:</b> Beginner Mage<br>
+<b>Primary Tree:</b> Magnetics<br>
+<b>Account:</b> <a href="http://mutt.chatango.com">Mutt</a><br>
+<b>Relation:</b> Adopted Daughter
+<br><br>
+<h1>How Did They Meet?</h1>
+A well hidden pathway to the Faerie Realm resides at the base of a cliff on the island that Ulreich University's campus occupies. Traveling this secret path leads to Gossamer's "birthplace," a small cottage where she opened her eyes for the very first time after The Dream. It was here that she found little June, hiding alone and afraid on her roof, tiny as a toddler and very obviously sickly and malnourished. Gossamer felt a lot of sympathy for the child and took her under her wing, despite the girl being a direct descendant of her people's oppressors. The older Faerie feels completely responsible for the orphaned tot and considers her the child she never had.
+</div>
+<div id="tab20">
+<img style="height:100%;" src="http://i.imgur.com/6P9rpk7.png"/>
+<p class="bet_time">THE RESCUED CHILD</p>
+</div>
+
+<div id="tab16">
+<h1>Basic Information</h1>
+<b>Name:</b> Nate<br>
+<b>Gender:</b> Male<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> British, raised Chinese<br>
+<b>Occupation:</b> Student<br>
+<b>Rank:</b> High Mage<br>
+<b>Primary Tree:</b> Aeromancy<br>
+<b>Account:</b> <a href="http://tempest.chatango.com">Tempest</a><br>
+<b>Relation:</b> Close Friend
+<br><br>
+<h1>How Did They Meet?</h1>
+Another mage met through Apollo's connections, Gossamer didn't have the wonderful opportunity of meeting this young fellow until after he was taken briefly under her boyfriend's wing. From there on out they grew a sweet bond, and just as she feels protective of Brooke and June, she extends the same emotions to young Nathaniel. Might as well consider him one of her honorary "children" considering the motherly affection she offers.
+</div>
+<div id="tab21">
+<img style="height:100%;" src="https://i.imgur.com/Ig65jI4.jpg"/>
+<p class="bet_time">THE YOUNG MONK</p>
+</div>
+
+<div id="tab17">
+<h1>Basic Information</h1>
+<img align="right" style="height:30%;" src="https://i.imgur.com/CYZpyJ5.png"/>
+<b>Name:</b> Kasai<br>
+<b>Gender:</b> Male<br>
+<b>Species:</b> Spectral Puppy<br>
+<b>Race:</b> Shiba Inu<br>
+<b>Occupation:</b> Unity Summon<br>
+<b>Rank:</b> Mage<br>
+<b>Relation:</b> Gossamer's Pet
+<br><br>
+<h1>Magic Ability</h1>
+<b>Phantasmal Trick or Treater</b><br>
+Delivered in an owl cage, this spooky little ghost will immediately associate it's winner as their owner, and will fly around and follow them freely. They can be summoned and dismissed, and while active will imbue the caster with the “Sugar Rush” passive. This increases their base movement speed by x1.5 (soft cap being x5, meaning this will only stack with other spells to this point). In addition, the little ghost can be fired as a projectile (with a max range of 40 feet, leaving this far from your character will dismiss them). Upon connecting with an enemy or their mana (only physical mana) this will increase the passive by x.1 for up to 5 posts. This can be stacked until the overall passive is x2! Other than this, this creature does no damage but can be destroyed by any energy based attacks of mage or above. Killing the creature will cause it to disappear for 5 posts before being summoned. The appearance of the creature can be pitched and approved.  
+<br><br>
+<h1>How Did They Meet?</h1>
+Without explanation, this adorable puppy arrived without announcement on Gossamer's figurative doorstep. One day she stepped out of her Dorm Room and there he was, in a little owl cage, floating around and yipping at her.
+<br>
+In the spirit of Halloween, he remains dressed in a Chibiterasu costume twenty-four-seven.
+<br>
+(Won from the Halloween Event prize drawing. His costume is a reference to the game "OkamiDen.")
+</div>
+<div id="tab22">
+<img style="height:100%;" src="https://i.imgur.com/qp9rZiX.png"/>
+<p class="bet_time">THE FAMILY DOG</p>
+</div>
